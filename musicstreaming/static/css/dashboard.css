@@ -4,4 +4,12 @@
 
 .new-project {
     text-align: right;
+<<<<<<< HEAD
+=======
+}
+
+.btn-project {
+    background: transparent;
+    max-width: 100%;
+>>>>>>> ecfda37b16591feed09f9e306171c575ca5b3650
 }

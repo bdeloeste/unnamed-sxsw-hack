@@ -22,6 +22,7 @@
 
   <!-- Template style -->
   <link href={% static 'css/style.css' %} rel="stylesheet">
+<<<<<<< HEAD
 
    <!-- -->
    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap.min.css" type="text/css" />
@@ -40,10 +41,17 @@
 </head>
 
 <body data-ng-controller="MainController">
+=======
+
+  <!-- Dashboard style -->
+  <link href={% static 'css/dashboard.css' %} rel="stylesheet">
+</head>
+
+<body>
+>>>>>>> ecfda37b16591feed09f9e306171c575ca5b3650
     {% block dashboard %} {% endblock %}
     {% block index %} {% endblock %}
 
-    {% include 'footer.html' %}
 
     <!-- SCRIPTS -->
 
