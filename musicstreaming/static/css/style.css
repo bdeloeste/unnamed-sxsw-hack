@@ -154,6 +154,7 @@ body {
   background-color: #0E274D !important;
 }
 
+<<<<<<< HEAD
         body {
             padding-top: 60px;
             padding-bottom: 40px;
@@ -358,4 +359,10 @@ body {
 iframe {
     height: 1980px;
     width: 1150px;
+=======
+#card-panel{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+>>>>>>> 2770ebd96593ec31d30b30b876ce9c5d3e5d7905
 }
