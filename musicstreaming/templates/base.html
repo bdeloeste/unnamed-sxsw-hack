@@ -1,7 +1,7 @@
 {% load staticfiles %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="CiulApp">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,9 +22,21 @@
 
   <!-- Template style -->
   <link href={% static 'css/style.css' %} rel="stylesheet">
+
+   <!-- -->
+   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap.min.css" type="text/css" />
+   
+   <--Angular.js include--> 
+   <script data-require="angular.js@1.1.5" data-semver="1.1.5" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+   
+   <--Angular include for facebook integreationg--> 
+   <script data-require"angular.js@1.1.5" data-semver="1.1.5" src="http://rawgithub.com/Ciul/angular-facebook/master/lib/angular-facebook.js"></script>
+   
+   <--Facebook integreation angularjs script--> 
+   <script src="static/js/script.js"></script>
 </head>
 
-<body>
+<body data-ng-controller="MainController">
     {% include 'navbar.html' %}
 
     {% block index %}{% endblock %}

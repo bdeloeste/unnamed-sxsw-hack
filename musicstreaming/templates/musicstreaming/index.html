@@ -48,8 +48,18 @@
                                                 </div>
 
                                                 <div class="text-center">
-                                                    <button type="submit" class="btn btn-primary btn-lg btn-ptc waves-effect waves-light">Login</button>
-                                                    <div class="subscription-checkbox">
+                                                   <button type="button" class="btn btn-primary btn-lg btn-ptc waves-effect waves-light" data-ng-show="!logged" 
+                                                         data-ng-disabled="!facebookReady" data-ng-click="IntentLogin()" >Continue with Facebook</button>
+                                                   <h4>or</h4>
+                                                   <button type="submit" class="btn btn-primary btn-lg btn-ptc waves-effect waves-light">Login</button>
+
+                                                   <button type="button" class="btn btn-danger btn-large" data-ng-show="logged" data-ng-disabled="!facebookReady"                                                                   data-ng-click="logout()">Logout</button>
+
+                                                  <!-- <div>
+                                                      <debug val="user"></debug>
+                                                   </div>-->
+                                                   
+                                                   <div class="subscription-checkbox">
                                                         <form action="#">
                                                             <label for="test6">
                                                                 <p>New to TuneFork? <a href="/">Create an account.</a></p>
