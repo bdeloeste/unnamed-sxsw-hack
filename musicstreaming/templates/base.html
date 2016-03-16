@@ -34,15 +34,16 @@
    
    <--Facebook integreation angularjs script--> 
    <script src="static/js/script.js"></script>
+
+  <!-- Dashboard style -->
+  <link href={% static 'css/dashboard.css' %} rel="stylesheet">
 </head>
 
 <body data-ng-controller="MainController">
-    {% include 'navbar.html' %}
-
-    {% block index %}{% endblock %}
+    {% block dashboard %} {% endblock %}
+    {% block index %} {% endblock %}
 
     {% include 'footer.html' %}
-
 
     <!-- SCRIPTS -->
 

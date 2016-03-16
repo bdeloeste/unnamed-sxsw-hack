@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block index %}
+    {% include 'navbar.html' %}
     <!-- Intro image -->
     <section class="full-bg-img" id="sec-home">
         <!--Mask-->
@@ -37,7 +38,7 @@
                                                 {% csrf_token %}
                                                 <div class="input-field">
                                                     <i class="material-icons prefix">account_circle</i>
-                                                    <input id="icon_prefix" type="text" class="validate">
+                                                    <input name="username" id="icon_prefix" type="text" class="validate">
                                                     <label for="icon_prefix">Username</label>
                                                 </div>
 
@@ -48,22 +49,28 @@
                                                 </div>
 
                                                 <div class="text-center">
+<!--<<<<<<< HEA-->
                                                    <button type="button" class="btn btn-primary btn-lg btn-ptc waves-effect waves-light" data-ng-show="!logged" 
                                                          data-ng-disabled="!facebookReady" data-ng-click="IntentLogin()" >Continue with Facebook</button>
-                                                   <h4>or</h4>
+                                                 <!--  <h4>or</h4>
                                                    <button type="submit" class="btn btn-primary btn-lg btn-ptc waves-effect waves-light">Login</button>
-
-                                                   <button type="button" class="btn btn-danger btn-large" data-ng-show="logged" data-ng-disabled="!facebookReady"                                                                   data-ng-click="logout()">Logout</button>
+-->
+                                                   <!--<button type="button" class="btn btn-danger btn-large" data-ng-show="logged" data-ng-disabled="!facebookReady"                                                                   data-ng-click="logout()">Logout</button>-->
 
                                                   <!-- <div>
                                                       <debug val="user"></debug>
                                                    </div>-->
                                                    
                                                    <div class="subscription-checkbox">
-                                                        <form action="#">
+<!--======
+                                                    <button type="submit" class="btn btn-primary btn-lg btn-ptc waves-effect waves-light">Login</button>
+
+                                                    <div class="subscription-checkbox">
+>>>>>>> b68aec615a49b17ff3874dbb1cc6e20261402d4-->
+  <!--                                                      <form action="#">
                                                             <label for="test6">
                                                                 <p>New to TuneFork? <a href="/">Create an account.</a></p>
-                                                            </label>
+                                                            </label>-->
                                                         </form>
                                                     </div>
                                                 </div>
